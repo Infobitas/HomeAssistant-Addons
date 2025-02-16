@@ -8,6 +8,19 @@
 
 ## Addons available
 
+### 🧩 [Home Assistant Git Exporter][git-exporter-files]
+
+![Latest Version][git-exporter-version-badge]
+![Supports aarch64 Architecture][git-exporter-aarch64-badge]
+![Supports amd64 Architecture][git-exporter-amd64-badge]
+![Supports armhf Architecture][git-exporter-armhf-badge]
+![Supports armv7 Architecture][git-exporter-armv7-badge]
+![Supports i386 Architecture][git-exporter-i386-badge]
+
+Export all of your Home Assistant configuration to a git repository of your choice
+
+[![Home Assistant Git Exporter add-on documentation][addon-docs-badge]][git-exporter-doc]
+
 ### 🧩 [MPD][mpd-files]
 
 ![Latest Version][mpd-version-badge]
@@ -21,6 +34,22 @@ Music Player Daemon is a free and open source music player. It plays audio files
 
 [![MPD add-on documentation][addon-docs-badge]][mpd-doc]
 
+
+## Installation
+
+To install any of the add-ons offered in this repository, you must first add its repository URL to your Home Assistant instance. To do so, click the following button:
+
+[![Add repository to your Home Assistant instance.][repository-badge]][repository-url]
+
+or manually add the following repository URL in the Home Assistant add-on store:
+
+`https://github.com/Infobitas/Home-Assistant-Addons`
+
+Then search for any of the add-ons in our addon store (button below) to install them.
+
+[![Open your Home Assistant instance and show the Supervisor add-on store.][addon-store-badge]][addon-store-url]
+
+You can also install them over the buttons in the Readmes of the addon folders.
 
 ## Support
 
