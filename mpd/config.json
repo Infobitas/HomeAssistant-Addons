@@ -1,0 +1,53 @@
+{
+  "apparmor": false,
+  "arch": [
+    "aarch64",
+    "amd64",
+    "armv7",
+	"armhf",
+	"i386"
+  ],
+  "codenotary": "infobitas@gmail.com",
+  "description": "Music Player Daemon is a free and open source music player.",
+  "devices": [
+    "/dev/snd"
+  ],
+  "options": {
+	"media_folder": "/media/mpd/media",
+	"playlist_folder": "/media/mpd/playlists",
+	"volume_normalization": false,
+	"httpd_output": false
+  },
+  "schema": {
+	"media_folder": "match(/share/.+|/media/.+|(smb|nfs)://.+)",
+	"playlist_folder": "match(/share/.+|/media/.+|(smb|nfs)://.+)",
+	"volume_normalization": "bool",
+	"httpd_output": "bool",
+	"verbose": "bool?",
+	"custom_config": "match(/share/mpd/.+)?"
+  },
+  "image": "ghcr.io/poeschl-homeassistant-addons/mpd-{arch}",
+  "map": [
+    "share:rw",
+	"media:rw"
+  ],
+  "name": "MPD",
+  "ports": {
+    "6600/tcp": 6600,
+    "8000/tcp": null
+  },
+  "ports_description": {
+    "6600/tcp": "MDP Connection",	
+	"8000/tcp": "HTTPd Connection (if enabled)"
+  },
+  "privileged": [
+    "SYS_ADMIN",
+    "SYS_RAWIO"
+  ],
+  "slug": "mpd",
+  "uart": true,
+  "udev": true,
+  "url": "https://github.com/Infobitas/Home-Assistant-Addons",
+  "usb": true,
+  "version": "1.7.5"
+}
