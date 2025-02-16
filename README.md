@@ -27,10 +27,8 @@ Then search for any of the add-ons in our addon store (button below) to install 
 
 [project-stage-badge]: https://img.shields.io/badge/project%20stage-✔%20stable-green.svg
 [Stable-Repository]: https://github.com/Infobitas/Home-Assistant-Addons
-
 [repository-url]: https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A//github.com/Infobitas/Home-Assistant-Addons
 [addon-store-url]: https://my.home-assistant.io/redirect/supervisor_store/
-
 [mpd-files]: https://github.com/Infobitas/Home-Assistant-Addons/mpd
 [mpd-issue]: https://github.com/Infobitas/Home-Assistant-Addons/mpd/issues
 [mpd-version-badge]: https://img.shields.io/badge/version-1.7.5-blue.svg
