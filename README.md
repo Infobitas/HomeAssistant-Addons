@@ -1,6 +1,10 @@
 # Infobitas Home Assistant Supervisor Add-ons
 
 ![Project Stage][project-stage-badge]
+![GitHub commit activity][commit-badge]
+![Licence][licence-badge]
+
+[![Installation Statistics][statistics-badge]][statistics-url]
 
 ## Addons available
 
@@ -15,6 +19,8 @@
 
 Music Player Daemon is a free and open source music player. It plays audio files, organizes playlists and maintains a music database
 
+[![MPD add-on documentation][addon-docs-badge]][mpd-doc]
+
 
 ## Support
 
@@ -22,6 +28,7 @@ If you are here, seeking help, please look at the issues of the specific addon.
 
 - [Issues of MPD][mpd-issue]
 
+[project-stage-badge]: https://img.shields.io/badge/project%20stage-✔%20stable-green.svg
 [commit-badge]: https://img.shields.io/github/commit-activity/m/Infobitas/Home-Assistant-Addons
 [licence-badge]: https://img.shields.io/github/license/Infobitas/Home-Assistant-Addons
 [Stable-Repository]: https://github.com/Infobitas/Home-Assistant-Addons
