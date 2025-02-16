@@ -3,4 +3,4 @@ addons:
   mpd:
     repository: Infobitas/Home-Assistant-Addons/mpd
     target: mpd
-    image: ghcr.io/poeschl-homeassistant-addons/mpd-{arch}
+    image: ghcr.io/Infobitas/Home-Assistant-Addons/mpd-{arch}
