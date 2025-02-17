@@ -40,7 +40,7 @@
 	"volume_normalization": "Volume Normalization",
 	"verbose": "Verbose Log",
 	"custom_config": "Custom Configuration"
-  }  
+  }, 
   "map": ["config", "media", "share"], 
   "ports": {
     "6600/tcp": 6600
