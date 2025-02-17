@@ -1,8 +1,8 @@
 {
   "name": "MPD Audio Server",
   "version": "1.0.0",
-  "slug": "mpd_audio",
-  "description": "Music Player Daemon is a free and open source music player.",
+  "slug": "mpd",
+  "description": "Music Player Daemon is a free and open source music player",
   "startup": "application",
   "boot": "auto",
   "host_network": false,
@@ -14,8 +14,7 @@
 	"armhf",
 	"i386"
   ],
-  "codenotary": "infobitas@gmail.com",
-  
+  "codenotary": "infobitas@gmail.com",  
   "devices": [
     "/dev/snd"
   ],
