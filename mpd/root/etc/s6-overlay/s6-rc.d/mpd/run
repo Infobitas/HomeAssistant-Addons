@@ -35,17 +35,6 @@ else
 		sed -i "/^log_level/s/default/verbose/" /etc/mpd.conf
 	fi
 
-	if [ "$(bashio::config 'httpd_output')" == 'true' ]; then
-		printf '\n
-		audio_output { \n
-			type		"httpd" \n
-			name		"HTTPd Output" \n 
-			port		"8000" \n
-			bitrate		"192" \n
-			always_on	"yes" \n
-		}' >> /etc/mpd.conf
-		bashio::log.info 'HTTPd output enabled'
-	fi
 fi
 
 chown root:root /usr/bin/mpd
