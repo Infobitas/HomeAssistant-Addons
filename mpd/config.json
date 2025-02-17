@@ -1,12 +1,5 @@
 {
-  "name": "MPD Audio Server",
-  "version": "1.0.0",
-  "slug": "mpd",
-  "description": "Music Player Daemon is a free and open source music player",
-  "startup": "application",
-  "boot": "auto",
-  "host_network": false,
-  "audio": true,
+  "apparmor": false,
   "arch": [
     "aarch64",
     "amd64",
@@ -14,7 +7,8 @@
 	"armhf",
 	"i386"
   ],
-  "codenotary": "infobitas@gmail.com",  
+  "codenotary": "infobitas@gmail.com",
+  "description": "Music Player Daemon is a free and open source music player.",
   "devices": [
     "/dev/snd"
   ],
@@ -22,39 +16,38 @@
 	"media_folder": "/media/mpd/media",
 	"playlist_folder": "/media/mpd/playlists",
 	"volume_normalization": false,
-	"httpd_output": false,	
-    "audio_output": "alsa",
-    "audio_device": "default",
-    "mixer_type": "software",
-    "input_device": "hw:1,0",
-    "bitrate": "320",
-    "format": "44100:16:2"
+	"httpd_output": false
   },
   "schema": {
 	"media_folder": "match(/share/.+|/media/.+|(smb|nfs)://.+)",
 	"playlist_folder": "match(/share/.+|/media/.+|(smb|nfs)://.+)",
 	"volume_normalization": "bool",
 	"httpd_output": "bool",
-	"verbose": "bool",
-	"custom_config": "match(/share/mpd/.+)",
-    "audio_output": "str",
-    "audio_device": "str",
-    "mixer_type": "str",
-    "input_device": "str",
-    "bitrate": "int",
-    "format": "str"	
+	"verbose": "bool?",
+	"custom_config": "match(/share/mpd/.+)?"
   },
-  "image": "ghcr.io/Infobitas/HomeAssistant-Addons/mpd-{arch}",
-  "map": ["config", "media", "share"], 
+  "image": "ghcr.io/poeschl-homeassistant-addons/mpd-{arch}",
+  "map": [
+    "share:rw",
+	"media:rw"
+  ],
+  "name": "MPD",
   "ports": {
-    "6600/tcp": 6600
+    "6600/tcp": 6600,
+    "8000/tcp": null
   },
   "ports_description": {
-    "6600/tcp": "MDP Connection"
+    "6600/tcp": "MDP Connection",	
+	"8000/tcp": "HTTPd Connection (if enabled)"
   },
   "privileged": [
     "SYS_ADMIN",
     "SYS_RAWIO"
-  ],  
-  "url": "https://github.com/Infobitas/HomeAssistant-Addons"
+  ],
+  "slug": "mpd",
+  "uart": true,
+  "udev": true,
+  "url": "https://github.com/Infobitas/Home-Assistant-Addons",
+  "usb": true,
+  "version": "1.7.5"
 }
