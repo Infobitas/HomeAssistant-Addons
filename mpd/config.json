@@ -26,7 +26,7 @@
 	"verbose": "bool?",
 	"custom_config": "match(/share/mpd/.+)?"
   },
-  "image": "ghcr.io/poeschl-homeassistant-addons/mpd-{arch}",
+  "image": "ghcr.io/Infobitas/HomeAssistant-Addons/mpd-{arch}",
   "map": [
     "share:rw",
 	"media:rw"
@@ -34,7 +34,8 @@
   "name": "MPD",
   "ports": {
     "6600/tcp": 6600,
-    "8000/tcp": null
+    "8000/tcp": null,
+	"6680/tcp": null
   },
   "ports_description": {
     "6600/tcp": "MDP Connection",	
@@ -45,9 +46,11 @@
     "SYS_RAWIO"
   ],
   "slug": "mpd",
+  "audio": true,
+  "init": false,
   "uart": true,
   "udev": true,
-  "url": "https://github.com/Infobitas/Home-Assistant-Addons",
+  "url": "https://github.com/Infobitas/HomeAssistant-Addons",
   "usb": true,
   "version": "1.7.5"
 }
