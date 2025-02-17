@@ -31,7 +31,7 @@
 	"media_folder": "match(/share/.+|/media/.+|(smb|nfs)://.+)",
 	"playlist_folder": "match(/share/.+|/media/.+|(smb|nfs)://.+)",
 	"volume_normalization": "bool",
-	"verbose": "bool",
+	"verbose": "bool?",
 	"custom_config": "match(/share/mpd/.+)?"
   },
   "description": {
