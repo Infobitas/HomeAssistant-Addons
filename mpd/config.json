@@ -28,7 +28,7 @@
     "mixer_type": "software",
     "input_device": "hw:1,0",
     "bitrate": "320",
-    "format": "44100:16:2"	
+    "format": "44100:16:2"
   },
   "schema": {
 	"media_folder": "match(/share/.+|/media/.+|(smb|nfs)://.+)",
