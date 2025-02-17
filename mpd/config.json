@@ -34,7 +34,7 @@
 	"verbose": "bool?",
 	"custom_config": "match(/share/mpd/.+)?"
   }, 
-  "map": ["config", "media", "share"], 
+  "map": ["config", "media:rw", "share:rw"], 
   "ports": {
     "6600/tcp": 6600
   },
