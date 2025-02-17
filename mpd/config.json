@@ -23,13 +23,7 @@
 	"media_folder": "/media/mpd/media",
 	"playlist_folder": "/media/mpd/playlists",
 	"volume_normalization": false,
-	"httpd_output": false,	
-    "audio_output": "alsa",
-    "audio_device": "default",
-    "mixer_type": "software",
-    "input_device": "hw:1,0",
-    "bitrate": "320",
-    "format": "44100:16:2"
+	"httpd_output": false
   },
   "schema": {
 	"media_folder": "match(/share/.+|/media/.+|(smb|nfs)://.+)",
@@ -37,13 +31,7 @@
 	"volume_normalization": "bool",
 	"httpd_output": "bool",
 	"verbose": "bool?",
-	"custom_config": "match(/share/mpd/.+)?",
-    "audio_output": "str",
-    "audio_device": "str",
-    "mixer_type": "str",
-    "input_device": "str",
-    "bitrate": "int",
-    "format": "str"	
+	"custom_config": "match(/share/mpd/.+)?"
   },
   "image": "ghcr.io/Infobitas/HomeAssistant-Addons/mpd-{arch}",
   "map": ["config", "media", "share"], 
