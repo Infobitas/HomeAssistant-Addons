@@ -7,8 +7,8 @@
 
 [stage-badge]: https://img.shields.io/badge/Addon%20stage-stable-green.svg
 
-[release-badge]: https://img.shields.io/badge/version-v1.7.5-blue.svg
-[release]: https://github.com/Home-Assistant-Addons/mpd/tree/v1.7.5
+[release-badge]: https://img.shields.io/badge/version-v1.7.6-blue.svg
+[release]: https://github.com/HomeAssistant-Addons/mpd/tree/v1.7.6
 
 
 
