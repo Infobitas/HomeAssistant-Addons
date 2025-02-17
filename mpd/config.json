@@ -32,8 +32,15 @@
 	"playlist_folder": "match(/share/.+|/media/.+|(smb|nfs)://.+)",
 	"volume_normalization": "bool",
 	"verbose": "bool",
-	"custom_config": "match(/share/mpd/.+)?"	
+	"custom_config": "match(/share/mpd/.+)?"
   },
+  "description": {
+    "media_folder": "Media Folder",
+    "playlist_folder": "Playlist Folder",
+	"volume_normalization": "Volume Normalization",
+	"verbose": "Verbose Log",
+	"custom_config": "Custom Configuration"
+  }  
   "map": ["config", "media", "share"], 
   "ports": {
     "6600/tcp": 6600
