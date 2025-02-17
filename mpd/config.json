@@ -6,8 +6,8 @@
   "description": "Music Player Daemon is a free and open source music player",
   "startup": "application",
   "boot": "auto",
-  "host_network": false,
   "audio": true,
+  "usb": true,
   "arch": [
     "aarch64",
     "amd64",
@@ -15,7 +15,6 @@
 	"armhf",
 	"i386"
   ],
-  "codenotary": "infobitas@gmail.com",  
   "devices": [
     "/dev/snd"
   ],
@@ -33,7 +32,6 @@
 	"verbose": "bool?",
 	"custom_config": "match(/share/mpd/.+)?"
   },
-  "image": "ghcr.io/Infobitas/HomeAssistant-Addons/mpd-{arch}",
   "map": ["config", "media", "share"], 
   "ports": {
     "6600/tcp": 6600
@@ -44,6 +42,5 @@
   "privileged": [
     "SYS_ADMIN",
     "SYS_RAWIO"
-  ],  
-  "url": "https://github.com/Infobitas/HomeAssistant-Addons"
+  ]
 }
