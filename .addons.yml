@@ -1,6 +1,0 @@
-channel: stable
-addons:
-  mpd:
-    repository: Infobitas/HomeAssistant-Addons/mpd
-    target: mpd
-    image: ghcr.io/Infobitas/HomeAssistant-Addons/mpd-{arch}
