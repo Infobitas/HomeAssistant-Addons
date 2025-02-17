@@ -5,8 +5,6 @@ RUN apk add --no-cache \
         mpc=0.35-r0 \
         mpd=0.23.16-r0
 
-COPY mpd.conf /etc/mpd.conf
-
 EXPOSE 6600
 
 ENTRYPOINT [ "/init" ]
